@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lobster&family=Paytone+One&family=Sassy+Frass&family=Ubuntu:wght@300&family=Lobster+Two&family=PT+Sans:ital@0;1&display=swap" rel="stylesheet');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+/* =================================== */
+.icons {
+  padding: 2rem 10rem 5rem 10rem;
+  background-color: #262525;
+}
+
+.icons1 a i {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #fff;
+  float: right;
+}
+
+#Menu {
+  transition: 0.1s;
+}
+.icons2 a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #f9f3f3;
+  float: left;
+}
+
+.icons:hover {
+  background-color:#333;
+  transition: 0.2s linear;
+}
+.icons1 a i:hover {
+  color: #c0eeee;
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+
+.icons2 a:hover {
+  color: #c0eeee;
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+
+/* ================================= */
+
+.logo{
+  height:3rem;
+  width:3rem;
+}
+
+.title,.rson1,.rson2 {
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: "Sassy Frass", cursive;
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 30px 0 55px 0;
+}
+
+/* =================================== */
+
+.hero-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(38, 36, 36, 0.4),
+      rgba(37, 36, 36, 0.4)
+    ),
+    url(./Images/Banner.jpg);
+  opacity: 0.8;
+  height: 580px;
+  width: 100%;
+  box-shadow: 6px 5px 50px #222;
+}
+
+/* ====================================== */
+
+.hero-main {
+  position: relative;
+  width: 54vw;
+  height: 66vh;
+  background-image: url(./Images/Hero_clip_bg.jpg);
+  background-size: cover;
+  box-shadow: 6px 5px 50px #222;
+  border-radius: 8px;
+
+}
+
+.clip {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.hero-main .clip.clip1 {
+  clip-path: polygon(0 0, 50% 0, 20% 100%, 0% 100%);
+  background:url(./Images/Clip1.jpg);
+  background-size: 100% 100%;
+  border-radius: 8px;
+}
+.hero-main .clip.clip2 {
+  clip-path: polygon(50% 0, 80% 100%, 80% 100%, 20% 100%);
+  background: url(./Images/Clip2.jpg);
+  background-size: 100% 100%;
+  border-radius: 8px;
+}
+.hero-main .clip.clip3 {
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 80% 100%);
+  background:url(./Images/Clip3.jpg);
+  background-size: 100% 100%;
+  border-radius: 8px;
+}
+
+.hero-main:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.hero-main .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.content {
+  left: 0;
+  padding: 10px;
+  background: linear-gradient(120deg, rgba(22, 160, 133, 0), #c0eeee);
+  border-radius: 0px 15px 15px 15px;
+  width: 50%;
+  color: #fff;
+  transition: 0.5s;
+  position: absolute;
+  box-shadow: 2px 2px 10px #222;
+}
+.content h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive;
+  color: #f4f2f1;
+  text-shadow:2px 2px 10px #222;
+}
+
+.main .clip:hover .content {
+  bottom: 0;
+  opacity: 1;
+}
+.content:hover {
+  color: #e6dcd2;
+  text-shadow:2px 2px 5px #222;
+  background: transparent;
+}
+
+/* ===================================*/
+
+.hero-next {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.hero-next h3 span {
+  display: block;
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 90px;
+  color: #e6dcd2;
+  font-weight: 600;
+  text-shadow: 0 13.36px 8.896px #d7c6aa, 0 -5px 1px #f5e0e0;
+  letter-spacing: 2px;
+}
+
+/* ====================================== */
+.menu-header,
+.aboutus,
+.contact,
+.booknow,
+.review {
+  padding-top: 4rem;
+  padding-bottom:10px;
+  text-align: center;
+  font-size: 55px;
+  font-family: "Kalam", cursive;
+}
+
+/* =================================== */
+
+.rson1 {
+  padding-top: 10px;
+  padding-bottom: 2rem;
+  text-shadow: 4px 5px 7px #222;
+}
+
+/* ============About Us Container========== */
+
+.about-con{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 100px 5px 100px;
+}
+
+.about-con .con-img figure img{
+    height:400px;
+    width:500px;
+    box-shadow:5px 5px 30px #222;
+    border-radius: 5px;
+}
+
+.con-des .desc-title{
+  font-size: 2.2rem;
+  font-family: 'Lobster Two', cursive;
+}
+
+.con-des .desc-content{
+  font-size: 1.2rem;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.con-des .desc-content a {
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  color: #222;
+  font-size: 1.7rem;
+  background-color: #e6dcd2;
+  border-radius: 7px;
+  font-family: "Kalam", cursive;
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem ;
+}
+
+.con-des .desc-content a:hover{
+  background-color: #c0eeee;
+  border-radius: 7px;
+  box-shadow:5px 5px 30px #222 ;
+
+}
+
+/* =================================== */
+
+.tea-types {
+  margin: 0%;
+  padding: 0 10rem 5rem 10rem;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.type-con-1,
+.type-con-2,
+.type-con-3,
+.type-con-4 {
+  display: flex;
+  padding: 10px 10px 30px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.type-con-4 {
+  padding-bottom: 10px;
+}
+.imagebox {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px #222;
+  border-radius: 0.7rem;
+}
+
+.imagebox img {
+  height: 150px;
+  width: 220px;
+  border-radius: 0.7rem;
+}
+
+.textbox {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 150px;
+  width: 100%;
+  border-radius: 0.7rem;
+  background: rgba(239, 169, 83, 0.7);
+  transition: 0.2s ease-in-out;
+}
+
+.textbox h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  font-size: 22.5px;
+  width: 100%;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+.textbox h2 {
+  color: #c0eeee;
+  font-size: 30px;
+  top: 97px;
+}
+
+.imagebox:hover .textbox {
+  left: 0%;
+}
+
+/* ===================Book Now=================== */
+
+.banner-reserv{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/banner-reserv.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: 420px 420px;
+}
+.card-img{
+  background: url("./Images/Clip2.jpg") center/cover no-repeat;
+}
+
+.card-content{
+  background: #fff;
+  height: 330px;
+}
+.card-content h3{
+  text-align: center;
+  color: #000;
+  padding: 25px 0 10px 0;
+  font-size: 33px;
+  font-weight: 400;
+  font-family: 'lobster';
+}
+.form-row{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+form select, form input{
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+  color: #9a9a9a;
+}
+form input[type = submit]{
+  color: #fff;
+  background: #c0eeee;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form input[type = submit]:hover{
+  color:#222;
+  background-color: #e6dcd2;
+}
+
+/* ==================Contact Us===================== */
+
+.contact-desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content{
+  height: 470px;
+}
+
+.card-img2{
+  background: url(./Images/contact-card-img.jpg) center/cover no-repeat;
+  background-size: cover;
+}
+/* =================Reviews=================== */
+.r-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  padding-bottom:2rem;
+}
+
+.grids{
+  height:390px;
+  width:280px;
+  padding: 20px;
+  background-color:#dcf1f1;
+  text-align: center;
+  box-shadow: 2px 2px 10px #222;
+  border-radius: 20px;
+  overflow:hidden;
+}
+
+
+.grids:hover{
+  height:405px;
+  width:295px;
+  transition: 0.2s linear;
+}
+.grids h1{
+  font-family: 'Lobster';
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px #222;
+}
+
+.g-review{
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'kalam';
+  font-weight: 0;
+  color: #727171;
+}
+
+.grids span{
+  color:#a0efef;
+  text-shadow:1px 1px 5px #222;
+  font-size: 30px;
+}
+/* ===================================== */
+
+footer {
+  background-color: #262525;
+  height: 20rem;
+}
+
+footer:hover {
+  background-color:#333;
+  transition: 0.2s linear;
+}
+
+.footer .footer-det{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-det .footer-logo .title{
+  font-size: 3rem;
+  padding: 10px 0 5px 0 ;
+}
+
+.footer-det .footer-logo a{
+  text-decoration: none;
+  color:#f9f3f3;
+}
+
+.footer-det .footer-logo .opts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-det .footer-logo .opts ul{
+  list-style: none;
+}
+
+.footer-det .footer-logo .opts ul li a {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+} 
+
+
+.footer-det .footer-logo .opts ul li a:hover {
+  color:#c0eeee;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.2s linear;
+}
+
+footer address{
+  text-align: center;
+  color:#f9f3f3;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+footer address h2{
+  position:relative;
+   font-size: 25px;
+   font-family: 'kalam';
+   color:#c0eeee;
+}
+
+footer address a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #a0efef;
+  font-family: 'kalam';
+}
+footer .footer-det .location iframe {
+  padding: 15px 0px;
+  height: 200px;
+  width: 300px;
+}
+
+footer .copy-ryt{
+  position: relative;
+}
+
+footer .copy-ryt h2{
+  color:#fff;
+  padding: 5px 0px 20px 0;
+  background-color: #262525;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+}
+
+
+/* ==============Media Queries================= */
+@media all and (min-device-width : 320px)  and (max-device-width : 800px){
+  .icons {
+    padding: 1rem 2rem 4rem 2rem;
+  }
+  .icons1 a i {
+    display: none;
+  }
+  .icons2 a {
+    font-size: 1.2rem; 
+    top:50%;
+    left: 50%;
+    transform: rotate(50%,-50%);
+  }
+  
+  .icons2 a:hover {
+    font-size: 1.5rem;
+  }
+  
+  /* ================================= */
+  
+  .logo{
+    height:2rem;
+    width:2rem;
+  }
+  
+  .title,.rson1,.rson2 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 20px 0 20px 0;
+  }
+  
+  /* =================================== */
+  
+  .hero-sec {
+    background-size: cover;
+    height: 480px;
+     box-shadow: 6px 5px 50px #222;
+  }
+  
+  /* ====================================== */
+  
+  .hero-main {
+    display: none;
+  }
+
+  .hero-next{
+    align-items: center;
+  }
+  
+  .hero-next h3 span {
+    margin: 8px 0 12px 0;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  
+  /* ====================================== */
+  .menu-header,
+  .aboutus,
+  .contact,
+  .booknow,
+  .review {
+    padding-top: 2rem;
+    padding-bottom:6px;
+    font-size: 40px;   
+  } 
+  /* =================================== */
+  
+  .rson1 {
+    padding-top: 5px;
+    padding-bottom: 1rem;
+  }
+  
+  /* ============About Us Container========== */
+  
+  .about-con{
+    display: block;
+    padding: 0px 60px px 60px;
+  }
+  
+  .about-con .con-img figure img{
+      height:300px;
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+  }
+  
+  .con-des .desc-title{
+    font-size: 1.5rem;
+  }
+  
+  .con-des .desc-content{
+    font-size: 0.7rem;
+  }
+  
+  .con-des .desc-content a {
+   
+    padding: 0;
+  }
+  
+}
+
+/* @media (max-width:991px){
+
+} */
+/* ====================Hero Clip================== */
+
+@media (max-width: 768px) {
+  .main {
+    width: 90vw;
+    height: 50vh;
+  }
+  .content h1 {
+    font-size: 13px;
+    text-align: center;
+  }
+  
+}
+@media (max-width: 1000px) {
+  .main {
+    width: 80vw;
+  }
+  .content h1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+}
+
+/* ==================Reservation================== */
+
+@media(max-width: 992px){
+  .card-container{
+      grid-template-columns: 100%;
+      width: 100vw;
+  }
+  .card-img{
+      height: 330px;
+  }
+}
+
+/* =================Reviews=================== */
+@media (max-width: 1330px){
+.r-container{
+  height: 380px;
+  width: 100%;
+  padding-bottom:2.5rem;
+}
+
+.grids{
+  height:350px;
+  width:200px;
+  padding: 15px;
+  overflow:hidden;
+}
+
+.grids:hover{
+  height:365px;
+  width:230px;
+}
+.grids h1{
+  font-size: 20;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px #222;
+}
+
+.g-review{
+  padding: 5px;
+  font-size: 15px;
+}
+
+.grids span{
+  color:#a0efef;
+  text-shadow:1px 1px 5px #222;
+  font-size: 18px;
+}
+}
+
+@media (max-width: 980px){
+  .r-container{
+    height: 380px;
+    width: 100%;
+  }
+  
+  .grids{
+    height:340px;
+    width:200px;
+    padding: 12px;
+  }
+  
+  .grids:hover{
+    height:350px;
+    width:210px;
+  }
+  }
+
+  @media (max-width: 940px){
+    .r-container{
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      padding-bottom:3rem;
+    }
+    
+    .grids{
+      height:360px;
+      width:250px;
+      padding: 20px;
+     
+   
+    }
+    
+    
+    .grids:hover{
+      height:370px;
+      width:260px;
+    }
+    .grids h1{
+      font-family: 'Lobster';
+      font-weight: 100;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px #222;
+    }
+    
+    .g-review{
+      padding: 10px;
+      font-size: 18px;
+      
+    }
+    
+    .grids span{
+      text-shadow:1px 1px 5px #222;
+      font-size: 30px;
+    }
+}
